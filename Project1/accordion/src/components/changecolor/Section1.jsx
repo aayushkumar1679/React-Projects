@@ -21,9 +21,12 @@ export default function RandomColor() {
 
   function createRandomrgbcolor() {
     // rgb(250, 250, 250);
-    let r = Math.floor(Math.random() * 250);
-    let g = Math.floor(Math.random() * 250);
-    let b = Math.floor(Math.random() * 250);
+    // let r = Math.floor(Math.random() * 250);
+    // let g = Math.floor(Math.random() * 250);
+    // let b = Math.floor(Math.random() * 250);
+    let r = randomColorUtility(256);
+    let g = randomColorUtility(256);
+    let b = randomColorUtility(256);
     const rgbColor = `rgb(${r}, ${g}, ${b})`;
     Setcolor(rgbColor);
     console.log(rgbColor);
